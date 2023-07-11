@@ -1,9 +1,11 @@
+const db = require('knex');
+
 const getAll = () => {
-  // DO YOUR MAGIC
+  return db('cars')
 }
 
-const getById = () => {
-  // DO YOUR MAGIC
+const getById = (id) => {
+  return db('cars').where('id', id)
 }
 
 const create = () => {
